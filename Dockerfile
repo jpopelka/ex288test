@@ -2,8 +2,8 @@ FROM quay.io/centos/centos:stream9
 
 RUN dnf install -y epel-release httpd
 
-RUN chgrp -R 0 /var/ && \
-    chmod -R g=u /var/
+RUN chgrp -R 0 /run/ && \
+    chmod -R g=u /run/
 
 USER 1001
 
